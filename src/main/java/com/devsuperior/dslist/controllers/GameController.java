@@ -19,8 +19,8 @@ public class GameController { // intaface do backend
     @Autowired
     private GameService gameService;
     @GetMapping(value = "/{id}")
-    public GameDTO findAll(@PathVariable Long id){
-        GameDTO result =gameService.findById(id);
+    public GameDTO findById(@PathVariable Long id){
+        GameDTO result = gameService.findById(id);
 
         return result;
     }
